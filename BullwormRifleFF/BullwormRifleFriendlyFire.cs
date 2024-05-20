@@ -3,9 +3,10 @@ using BepInEx;
 using BepInEx.Logging;
 using CessilCellsCeaChells.CeaChore;
 using HarmonyLib;
+using UnityEngine;
 
 [assembly: RequiresMethod(typeof(PardnerEquipment_BullwormRifle), nameof(PardnerEquipment_BullwormRifle.Awake), typeof(void))]
-[assembly: RequiresField(typeof(ConnectionPayload), nameof(ConnectionPayload.versionBullworkRifleFF), typeof(string))]
+[assembly: RequiresField(typeof(ConnectionPayload), nameof(ConnectionPayload.versionBullworkRifleFF), typeof(string), true)]
 
 namespace BullwormRifleFF;
 
@@ -18,7 +19,7 @@ public partial class BullwormRifleFriendlyFire : BaseUnityPlugin {
         Logger = base.Logger;
 
         Patcher.PatchAll();
-
+        
         int patchedMethodCount;
         Logger.LogDebug($"Successfully patched {(patchedMethodCount = Patcher.GetPatchedMethods().Count())} method{(patchedMethodCount == 1 ? "" : "s")}.");
     }
