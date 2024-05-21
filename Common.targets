@@ -1,7 +1,7 @@
 <Project>
     <PropertyGroup>
         <UseMinVer>true</UseMinVer>
-        <UnityVersion>x.x.x</UnityVersion>
+        <UnityVersion>2021.3.28</UnityVersion>
     </PropertyGroup>
     
     <PropertyGroup>

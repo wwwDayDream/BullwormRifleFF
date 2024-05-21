@@ -5,14 +5,15 @@ schemaVersion = "0.0.1"
 repository = "https://thunderstore.io"
 
 [package]
-namespace = ""
-name = ""
-description = ""
-websiteUrl = ""
+namespace = "www_Day_Dream"
+name = "BullwormRifleFF"
+description = "A Last Train Outta' Wormtown mod that enables friendly fire between pardners!"
+websiteUrl = "https://github.com/wwwDayDream/BullwormRifleFF"
 containsNsfwContent = false
 
 [package.dependencies]
-BepInEx-BepInExPack = ""
+BepInEx_Wormtown-BepInExPack = "5.4.22"
+www_Day_Dream-MultiplayerModRestrictor = "0.3.0"
 
 [build]
 icon = "icon.png"
@@ -28,9 +29,9 @@ source = "../CHANGELOG.md"
 target = "/"
 
 [[build.copy]]
-source = "../bin/Release//.dll"
-target = "/BepInEx/plugins//"
+source = "../bin/Release/netstandard2.1/wwwDayDream.BullwormRifleFF.dll"
+target = "/BepInEx/plugins/BullwormRifleFF/"
 
 [publish]
-communities = [ "" ]
-categories = [ "" ]
+communities = [ "last-train-outta-wormtown" ]
+categories = [ "mods" ]

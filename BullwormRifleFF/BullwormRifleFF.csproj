@@ -12,11 +12,12 @@
         
         <PackageReference Include="ShoddyGameLibs" Version="1.3.7" 
                           GameFilesDir="$(STEAMAPPS)Last Train Outta' Wormtown"
-                          BuildGameLibs="false" BuildFromGameLibs="true"
-                          CommonLibs="true" UnityVersion="2021.3.28" UseMinVer="true"/>
+                          BuildGameLibs="false" BuildFromGameLibs="true"/>
         
         <Reference Include="..\..\BepInEx\patchers\CessilCellsCeaChells" ShoddyGameLib="true" Publicize="true"/>
         <Reference Include="..\..\BepInEx\cache\Cessil.Assembly-CSharp" ShoddyGameLib="true" Publicize="true"/>
         <Reference Include="Unity.Netcode.Runtime" ShoddyGameLib="true"/>
     </ItemGroup>
+
+    <Import Project="../Common.targets"/>
 </Project>
