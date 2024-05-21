@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <AssemblyName>wwwDayDream.$(MSBuildProjectName)</AssemblyName>
         <TargetFramework>netstandard2.1</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
@@ -9,9 +10,9 @@
     <ItemGroup>
         <!-- <PackageReference Include="CessilCellsCeaChells" Version="0.3.4" PrivateAssets="all"/> -->
         
-        <PackageReference Include="ShoddyGameLibs" Version="1.3.5" 
+        <PackageReference Include="ShoddyGameLibs" Version="1.3.7" 
                           GameFilesDir="$(STEAMAPPS)Last Train Outta' Wormtown"
-                          BuildGameLibs="false" BuildFromGameLibs="false"
+                          BuildGameLibs="false" BuildFromGameLibs="true"
                           CommonLibs="true" UnityVersion="2021.3.28" UseMinVer="true"/>
         
         <Reference Include="..\..\BepInEx\patchers\CessilCellsCeaChells" ShoddyGameLib="true" Publicize="true"/>
