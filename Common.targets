@@ -5,6 +5,7 @@
     </PropertyGroup>
     
     <PropertyGroup>
+        <AssemblyName>wwwDayDream.$(MSBuildProjectName)</AssemblyName>
         <Product>$(MSBuildProjectName)</Product>
         <!-- Set NuGet Sources -->
         <RestoreAdditionalProjectSources>
