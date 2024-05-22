@@ -13,7 +13,8 @@ containsNsfwContent = false
 
 [package.dependencies]
 BepInEx_Wormtown-BepInExPack = "5.4.22"
-www_Day_Dream-MultiplayerModRestrictor = "0.3.0"
+www_Day_Dream-CessilCellsCeaChells = "0.3.5"
+www_Day_Dream-MultiplayerModRestrictor = "0.4.1"
 
 [build]
 icon = "icon.png"
